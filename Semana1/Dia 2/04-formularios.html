@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Mi Primer Formulario</h1>
+        <img src="" alt="">
+        <form action="registro" method="POST">
+            <fieldset>
+                <legend>Iniciar sesion</legend>
+                <input name="correo" placeholder="Ingrese un correo" required type="email"/>
+                <br>
+                <br>
+                <input name="password" placeholder="Ingrese una contraseña" required type="password" />
+                <button type="submit">Iniciar Sesion</button>
+            </fieldset>
+        </form>
+        <h1>Formulario de Registro</h1>
+        <form>
+            <fieldset>
+                <legend>Ingresa todos tus datos</legend>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Ingrese su Nombre">
+                <br>
+                <br>
+                <label for="apellido">Apellido</label>
+                <input id="apellido" name="apellido" type="text" placeholder="Ingrese su Apellido">
+                <br>
+                <br>
+                <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                <input id="fecha_nacimiento" name="fecha_nacimiento" type="date">
+            </fieldset>
+        </form>
+</body>
+</html>
