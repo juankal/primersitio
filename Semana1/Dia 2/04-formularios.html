@@ -24,7 +24,7 @@
             <fieldset>
                 <legend>Ingresa todos tus datos</legend>
                 <label for="nombre">Nombre</label>
-                <input id="nombre" name="nombre" type="text" placeholder="Ingrese su Nombre">
+                <input autofocus id="nombre" name="nombre" type="text" placeholder="Ingrese su Nombre">
                 <br>
                 <br>
                 <label for="apellido">Apellido</label>
@@ -33,6 +33,50 @@
                 <br>
                 <label for="fecha_nacimiento">Fecha de Nacimiento</label>
                 <input id="fecha_nacimiento" name="fecha_nacimiento" type="date">
+                <br>
+                <br>
+                <label for="correo">Correo</label>
+                <input id="correo" name="correo" required type="text" placeholder="Ingrese su correo">
+                <br>
+                <br>
+                <label for="celular">Celular</label>
+                <input id="celular" name="celular" maxlength="9" type="tel" placeholder="Ingrese su celular">
+                <br>
+                <br>
+                <label for="pais">Pais</label>
+                <select id="pais" name="pais">
+                    <option value="" disabled selected>Seleccione un pais</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Alemania">Alemania</option>
+                    <option value="Argentina">Argentina</option>
+                </select>
+                <br>
+                <br>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" required placeholder="Ingrese un password">
+                <br>
+                <br>
+                <label for="terminos">
+                <input id= terminos name="terminos" required type="checkbox">¿Acepta los terminos y condiciones?
+                </label>
+                <br>
+                <br>
+                <label for="suscription_1">
+                    <input id="suscription_1" name="suscription" type="radio"> Suscripcion 1
+                <label for="suscription_2">
+                    <input checked id="suscription_2" name="suscription" type="radio"> Suscripcion 2
+                <label for="suscription_3">
+                    <input id="suscription_3" name="suscription" type="radio"> Suscripcion 3
+                </label>
+                <br>
+                <br>
+                <label for="texto"></label>
+                <textarea id="texto" name="texto" placeholder="Ingrese un texto" rows="10" cols="50" maxlength="140" minlength="30"></textarea>
+                <br>
+                <br>
+                <button type="submit">Registrarse</button>
             </fieldset>
         </form>
 </body>
